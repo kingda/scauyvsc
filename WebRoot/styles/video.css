@@ -1,0 +1,18 @@
+.content{
+	
+	clear:both;
+	width:640px;
+	margin:0 auto 30px auto;
+	background-color:#f9ffdd;
+	padding:20px 20px;
+	border:solid 1px #000;
+	border-radius:20px;
+
+	
+}
+.content h2{
+	margin-bottom:20px;
+	color:white;
+	font-family:"微软雅黑";
+	background-color:#6ca338;
+}

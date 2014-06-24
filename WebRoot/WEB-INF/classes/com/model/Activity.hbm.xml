@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.model.Activity" table="activities">
+		<id name="activityId">
+			<generator class="identity"/>
+		</id>
+		<property name="activityHeadLine"/>
+		<property name="activityDec"></property>
+		<property name="activityImg"></property>
+		<property name="activityMaxPersons"></property>
+		<property name="activityBeginDate"></property>
+		<property name="activityEndDate"></property>
+		<property name="activityPSFile"></property>
+	</class>
+</hibernate-mapping>

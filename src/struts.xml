@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<!-- 包名自定义可继承， 继承struts-default -->
+<package name="demo" extends="struts-default" namespace="/">
+
+<!-- action名自定义，class对应的类要加包名 ，这里是com.controller.LoginAction,默认执行LoginAction中的execute方法-->
+<action name="login" class="com.controller.AdminLogin">
+<!-- 当方法返回SUCCESS时，跳转到succeess.jsp -->
+<result name="success">success.jsp</result>
+<!-- 当方法返回INPUT时，跳转到failure.jsp -->
+<result name="input">failure.jsp</result>
+</action>
+
+<!-- 普通用户登录 -->
+<action name="loginAction" class="com.controller.LoginAction">
+<!-- 当方法返回SUCCESS时，跳转到succeess.jsp -->
+<result name="success">activity.jsp</result>
+<!-- 当方法返回INPUT时，跳转到failure.jsp -->
+<result name="input">login.jsp</result>
+</action>
+
+<!-- 普通用户注册 -->
+<action name="registerAction" class="com.controller.RegisterAction">
+<!-- 当方法返回SUCCESS时，跳转到succeess.jsp -->
+<result name="success">register.jsp</result>
+<!-- 当方法返回INPUT时，跳转到failure.jsp -->
+<result name="input">register.jsp</result>
+</action>
+
+<!-- 管理员帮普通用户注册 -->
+<action name="registerByAdminAction" class="com.controller.RegisterAction">
+<!-- 当方法返回SUCCESS时，跳转到succeess.jsp -->
+<result name="success">adminShowUserAdd.jsp</result>
+<!-- 当方法返回INPUT时，跳转到failure.jsp -->
+<result name="input">adminShowUserAdd.jsp</result>
+</action>
+
+<!-- 管理员登陆 -->
+<action name="adminLoginAction" class="com.controller.AdminLogin">
+<!-- 当方法返回SUCCESS时，跳转到succeess.jsp -->
+<result name="success">adminIndex.jsp</result>
+<!-- 当方法返回INPUT时，跳转到failure.jsp -->
+<result name="input">adminLogin.jsp</result>
+</action>
+
+<!-- 管理员密码更改 -->
+<action name="adminChangePasswordAction" class="com.controller.AdminChangePassword">
+<!-- 当方法返回SUCCESS时，跳转到succeess.jsp -->
+<result name="success">adminChangePassword.jsp</result>
+<!-- 当方法返回INPUT时，跳转到failure.jsp -->
+<result name="input">adminChangePassword.jsp</result>
+</action>
+
+<!-- 用户更新 -->
+<action name="userMessageUpdateAction" class="com.controller.UserMessageUpdate">
+<!-- 当方法返回SUCCESS时，跳转到succeess.jsp -->
+<result name="success">userMessageUpdate.jsp</result>
+<!-- 当方法返回INPUT时，跳转到failure.jsp -->
+<result name="input">userMessageUpdate.jsp</result>
+</action>  
+
+<!-- 删除活动文章-->
+<action name="deleteArtAct" class="com.controller.DeleteArt">
+<!-- 当方法返回SUCCESS时，跳转到succeess.jsp -->
+<result name="success">articleShow.jsp</result>
+</action>
+
+<!-- 删除新闻-->
+<action name="deletepassage" class="com.controller.DeletePassage">
+<!-- 当方法返回SUCCESS时，跳转到succeess.jsp -->
+<result name="success">newsShow.jsp</result>
+</action>
+
+<!-- 用户删除 -->
+<action name="userMessageDeleteAction" class="com.controller.UserMessageDelete">
+<!-- 当方法返回SUCCESS时，跳转到succeess.jsp -->
+<result name="success">adminShowUser.jsp</result>
+<!-- 当方法返回INPUT时，跳转到failure.jsp -->
+<result name="input">adminShowUser.jsp</result>
+</action>
+
+<!-- 志愿者录取 -->
+<action name="userAccept" class="com.controller.UserAccept">
+<result name="success">userAccept.jsp</result>
+</action>
+<!-- 志愿者删除 -->
+<action name="userAcceptDel" class="com.controller.UserAcceptDel">
+<result name="success">userAccept.jsp</result>
+</action>
+<!-- 文件上传 -->
+<action name="uploadAct" class="com.controller.Upload">
+<result name="success">success.jsp</result>
+</action>
+<!-- 文件删除 -->  
+<action name="uploadDelete" class="com.controller.UploadDelete">
+<result name="success">uploadMan.jsp</result>
+</action>
+<!-- 邮件发送 -->
+<action name="mailAction" class="com.controller.EmailAction">
+<result name="success">email.jsp</result>
+<result name="input">email.jsp</result>
+</action>
+
+<action name="activityMessageUpdate" class="com.controller.ActivityMessageUpdate">
+<result name="success">articleShow.jsp</result>
+</action>
+</package>
+<package name="david" namespace = ""  extends = "struts-default">
+		<action name="activityAction" class="action.ActivityAction" method = "saveActivity">
+		<result name = "success">/success.jsp</result>		
+		</action>
+		
+		<action name="NewsAction" class="action.NewsAction" method = "saveNews">
+		<result name = "success">/success.jsp</result>		
+		</action>
+		 
+		<action name="applicationAction" class="action.ApplicationAction">
+		<result name = "success">/success.jsp</result>
+		<result name = "input">/activity.jsp</result>		
+		</action>
+	</package>
+</struts>    

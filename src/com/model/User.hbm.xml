@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.model">
+
+	<class name="User" table="user">
+		<id name="userNum">
+		</id>
+		<property name="userName"/>
+		<property name="userPassword"/>
+		<property name="userMail"/>
+		<property name="userQuestion"/>
+		<property name="userSex"/>
+		<property name="userHeight"/>
+		<property name="userGrade"/>
+		<property name="userMajor"/>
+		<property name="userPoliticsSta"/>
+		<property name="userPhoneNumber"/>
+		<property name="userShortNumber"/>
+		<property name="userDormitoryArea"/>
+		<property name="userDeclaration"/>
+		
+		
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+#news-content p{
+  color: black;
+}
+
+#news-content{
+
+  width: 794px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#main{width:100%; background:url(../images/center_bg.jpg) repeat-x; clear:both;}
+
+  #left{  width:250px; overflow:hidden;float: left;}
+     #news{ 
+      height:44px;  padding-top:42px;
+      text-align: center;
+       border-bottom: solid 2px #6ca338;
+     }
+ #leftcontent{ width:230px; margin-left:15px;  margin-top:20px;  color:#fff}
+ #leftcontent  li{  width:100px;font-size:12px;display:block;  float:left;  margin-right:10px;  list-style:none;height: 90px;vertical-align: middle;overflow: hidden;}
+ #leftcontent  li img{ border:5px solid #fff;clear:both;}
+ #leftcontent  li p{    margin-top:10px;color:#6ca338;}
+ #leftcontent  li p a{color:#000;}
+  #center{ 
+   width:250px; 
+   float:left; 
+   overflow:hidden;
+   position: relative;
+   height: 556px;
+     border-left: solid 2px #6ca338;
+     padding: 0 10px;
+ }
+ #center .center-center{
+   height: 440px;
+ }
+ #center .ver-center{
+  text-align: center;
+height: 380px;
+padding-top: 30px;
+margin-bottom: auto;
+ }
+ #center .center-p{
+  height: 120px;
+ }
+ #center p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+#center p.title{
+  font-size: 18px;
+  color: #6ca338;
+  font-weight: 900;
+
+}
+#center p.text{
+  font-size: 15px;
+}
+#footer{
+  clear: both;
+}
