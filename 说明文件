@@ -1,0 +1,2 @@
+这是一个strut2+hibernate开发的网站,配置的要求是修改主页的mysql密码,hibernate的配置文件修改为自己的数据库,
+而且要在mysql数据库中建好test数据库,初次使用时把hibernate配置文件的update改为create.
