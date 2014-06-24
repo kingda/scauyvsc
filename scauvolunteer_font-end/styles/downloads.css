@@ -1,0 +1,68 @@
+#content{
+
+	height: auto;
+}
+.topic_lightBlue h2 {
+background-image: url(../images/topics-1-background.png);
+}
+#articleList{
+
+	border: 1px solid #2c462b;
+}
+#articleList .article {
+margin: 0 13px 18px;
+padding-bottom: 8px;
+border-bottom: solid 1px #d4d4d4;
+zoom: 1;
+}
+#articleList .info {
+position: relative;
+height: 73px;
+padding-left: 72px;
+line-height: 2;
+}
+#articleList .info h3 {
+border-bottom: dotted 1px #a6a6a6;
+color: #000;
+font-size: 16px;
+font-weight: 700;
+}
+#articleList .author {
+padding-left: 16px;
+color: #a6a6a6;
+background: url(../images/articleList_author.png) 0 3px no-repeat;
+}
+#articleList .calendar {
+position: absolute;
+left: 0;
+top: 0;
+width: 66px;
+height: 68px;
+background: url(../images/calendar.png) no-repeat;
+}
+#articleList .calendar .ht {
+height: 34px;
+line-height: 43px;
+color: #fff;
+font-weight: 700;
+font-size: 13px;
+}
+#articleList .calendar .hb {
+position: relative;
+_top: -8px;
+height: 34px;
+line-height: 23px;
+color: #000;
+font-size: 16px;
+font-weight: 700;
+font-family: Arial, Helvetica, sans-serif;
+}
+#articleList .calendar p {
+text-align: center;
+}
+#articleList .ptm {
+overflow: hidden;
+padding: 0;
+font-size: 14px;
+line-height: 1.5;
+}

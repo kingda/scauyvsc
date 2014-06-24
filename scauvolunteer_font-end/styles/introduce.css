@@ -1,0 +1,47 @@
+#introduce-content{
+clear: both;
+width: 1083px;
+margin-left: auto;
+margin-right: auto;
+}
+.author{
+width: 361px;
+height: 361px;
+float: left;
+position: relative;
+}
+.author .author-english{
+text-align: center;
+font-family: "微软雅黑";
+font-size: 30px;
+position: relative;
+color: blue;
+}
+.author .author-name,.author .author-text{
+font-family: "微软雅黑";
+font-size: 25px;
+color: white;
+font-weight: 900;
+}
+
+.author .author-english .bg{
+left: 0;
+background-color: #000;
+width: 361px;
+height: 39px;
+z-index: 2;
+opacity: 0.5;
+position: absolute;
+}
+
+.author .author-name span{
+
+	position: absolute;
+	top: -20px;
+	display: none;
+
+}
+
+.open{
+	opacity: 0.9;
+}

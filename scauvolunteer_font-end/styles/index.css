@@ -1,0 +1,75 @@
+#content .topics-1-1{
+
+margin-bottom: 10px;
+width: 360px;
+position: relative;
+
+}
+#content .topics-1-1-h2{
+   text-indent: 27px;
+	background: white url(../images/topics-1-background.png)  repeat-x;
+	position: relative;
+    height: 33px;
+    line-height: 33px;
+    margin-left:0px;
+    margin-right: 0px;
+
+}
+#content .topics-1-1-h2 a{
+position: absolute;
+right: 27px;
+
+}
+#content .topics-1-1-title{
+margin-top: 10px;
+margin-bottom: 10px;
+padding-bottom: 10px;
+padding-right: 10px;
+border-bottom: solid 1px #ccc;
+height: 101px;
+
+
+}
+#content .topics-1-1-title li img{
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	border: solid 1px #ccc;
+}
+#content .topics-1-1-title li h4{
+      overflow: hidden;
+}
+
+#content .topics-1-1-title li p{
+line-height: 1.5em;
+
+}
+#content .topics-1-1-list{
+
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+#content .topics-1-1-list li {
+line-height: 1.5em;
+background: url(../images/topics-1-1-list-background.png) 10px center no-repeat;
+text-indent: 27px;
+}
+#content .topics-1{
+float: left;
+width: 50%;
+}
+.topics{
+
+	width: 960px;
+	height: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	padding-top: 20px;
+
+}
+#content .topics-1-center{
+	width: 362px;
+	margin-left: auto;
+	margin-right: auto;
+}
